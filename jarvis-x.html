@@ -10,5 +10,13 @@
 <body>
   <p>Our servers are temporarily unavailable. We’re working urgently to restore service.</p>
   <p><a href="/">View service notice</a></p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/sw.js?v=maintenance-20260831', { scope: '/' })
+        .then(registration => registration.update())
+        .catch(() => {});
+    }
+  </script>
 </body>
 </html>

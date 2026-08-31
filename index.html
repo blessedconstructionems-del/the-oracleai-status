@@ -92,5 +92,13 @@
     <p>We’re working urgently to restore service. Please check back shortly.</p>
     <small>The Oracle AI</small>
   </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/sw.js?v=maintenance-20260831', { scope: '/' })
+        .then(registration => registration.update())
+        .catch(() => {});
+    }
+  </script>
 </body>
 </html>

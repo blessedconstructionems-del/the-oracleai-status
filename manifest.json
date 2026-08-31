@@ -1,0 +1,11 @@
+{
+  "name": "The Oracle",
+  "short_name": "Oracle",
+  "description": "The Oracle AI service status",
+  "start_url": "/jarvis-x.html?maintenance=20260831",
+  "scope": "/",
+  "id": "the-oracle-personal",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#070b14"
+}
